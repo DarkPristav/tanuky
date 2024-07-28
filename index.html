@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Tanuki</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-box">
-                <div class="header-box__logo logo">
-                    <a href="/"><img src="./assets/logo.png" alt="logo"></a>
-                </div>   
-                <div class="header-box__buttons">
-                    <a href="/">Enter</a>
-                    <a href="/">Cart</a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-box">
+                    <div class="header-box__logo logo">
+                        <a href="/"><img src="./assets/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="header-box__buttons">
+                        <a class="btn-primary btn" href="/"><img src="./assets/icons/user.png" alt="User">Enter</a>
+                        <a class="btn-second btn" href="/"><img src="./assets/icons/Vector.png" alt="Cart">Cart</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="main"> 
-        <div class="container">
-            <p class="container__p">container</p>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-           <div class="footer-box">
-            
-                <div class="footer-box__logo logo">
-                    <a href="/"><img src="./assets/logo.png" alt="logo"></a>
+        </header>
+        <main class="main">
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-item">
+                        <h3 class="banner-title">
+                            Online service <br>
+                            food delivery to your home
+                        </h3>
+                        <p class="banner-desc">
+                            Dishes from your favorite restaurant will be delivered by <br>
+                            a courier wearing gloves, a mask and antiseptic.
+                        </p>
+                    </div>
                 </div>
-                <div class="footer-box__nav">
-                    <ul class="footer-nav">
-                        <li class="footer-nav__link"><a href="">Restaurants</a></li>
-                        <li class="footer-nav__link"><a href="">Couriers</a></li>
-                        <li class="footer-nav__link"><a href="">News</a></li>
-                        <li class="footer-nav__link"><a href="">Contacts</a></li>
-                    </ul>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <div class="products-header">
+                        <h3 class="products-header__title">
+                            Restaurants
+                        </h3>
+                        <input 
+                            type="text" 
+                            class="products-header__search"
+                            placeholder="Search for dishes and restaurants"
+                        >
+                    </div>
                 </div>
-               
-            <div class="footer-box__social">
-                <ul class="footer-social">
-                    <li class="footer-social__link"><a href="">1</a></li>
-                    <li class="footer-social__link"><a href="">2</a></li>
-                    <li class="footer-social__link"><a href="">3</a></li>
-                </ul>
-            </div>
-           </div>
-    </footer>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-box">
+
+                    <div class="footer-box__logo logo">
+                        <a href="/"><img src="./assets/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="footer-box__nav">
+                        <ul class="footer-nav">
+                            <li class="footer-nav__link"><a href="">Restaurants</a></li>
+                            <li class="footer-nav__link"><a href="">Couriers</a></li>
+                            <li class="footer-nav__link"><a href="">News</a></li>
+                            <li class="footer-nav__link"><a href="">Contacts</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-box__social">
+                        <ul class="footer-social">
+                            <li class="footer-social__link"><a href=""><img src="./assets/icons/Instagram.png"
+                                        alt="Instagram"></a></li>
+                            <li class="footer-social__link"><a href=""><img src="./assets/icons/Facebook.png"
+                                        alt="Facebook"></a></li>
+                            <li class="footer-social__link"><a href=""><img src="./assets/icons/Linked.png"
+                                        alt="Linked"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </footer>
+    </div>
 </body>
+
 </html>
